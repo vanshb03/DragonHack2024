@@ -10,7 +10,7 @@ const Page = () => {
         // Simulating a delay to show the loading animation
         const timer = setTimeout(() => {
             setLoading(false);
-        }, 2000); // 2000 milliseconds (2 seconds) delay
+        }, 1000); // 2000 milliseconds (2 seconds) delay
 
         // Clear the timer when the component unmounts
         return () => clearTimeout(timer);
