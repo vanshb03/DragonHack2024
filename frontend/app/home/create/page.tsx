@@ -16,11 +16,13 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import Link from "next/link"
+import { redirect } from "next/navigation"
 
 export default function Create() {
   const handleUpload = async (formData: FormData) => {
     'use server';
     console.log(formData);
+    redirect("/home2")
   }
 
   return (
