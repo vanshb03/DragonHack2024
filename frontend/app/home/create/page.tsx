@@ -22,7 +22,9 @@ export default function Create() {
   const handleUpload = async (formData: FormData) => {
     'use server';
     console.log(formData);
-    redirect("/home2")
+    const filename = formData.get('flashcards-name')
+    const test = `/home2/${filename}`
+    redirect(test)
   }
 
   return (
@@ -45,10 +47,10 @@ export default function Create() {
                     <SelectValue placeholder="Select" />
                   </SelectTrigger>
                   <SelectContent position="popper">
-                    <SelectItem value="next">Next.js</SelectItem>
-                    <SelectItem value="sveltekit">SvelteKit</SelectItem>
-                    <SelectItem value="astro">Astro</SelectItem>
-                    <SelectItem value="nuxt">Nuxt.js</SelectItem>
+                    <SelectItem value="dsa">Data Structures and Algorithms</SelectItem>
+                    <SelectItem value="biology">Biology</SelectItem>
+                    <SelectItem value="chemistry">Chemistry</SelectItem>
+                    <SelectItem value="physics">Physics</SelectItem>
                   </SelectContent>
                 </Select>
               </div>

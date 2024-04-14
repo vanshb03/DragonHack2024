@@ -22,7 +22,8 @@ export default function Create() {
   const handleUpload = async (formData: FormData) => {
     'use server';
     console.log(formData);
-    redirect("/home2")
+    const filename = formData.get('flashcards-name')
+    redirect(`/home2/${filename}`)
   }
 
   return (

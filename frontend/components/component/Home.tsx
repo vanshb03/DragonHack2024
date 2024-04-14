@@ -60,13 +60,6 @@ export function Home() {
               <BookOpenIcon className="h-4 w-4" />
               Study Flashcards
             </Link>
-            <Link
-              className="flex items-center gap-3 rounded-lg px-3 py-2 text-gray-500 transition-all hover:text-gray-900 dark:text-gray-400 dark:hover:text-gray-50"
-              href="#"
-            >
-              <ActivityIcon className="h-4 w-4" />
-              Recent Activity
-            </Link>
           </nav>
         </div>
       </div>
@@ -80,70 +73,24 @@ export function Home() {
             <Card>
               <CardHeader className="flex flex-row items-center justify-between pb-2 space-y-0">
                 <CardTitle className="text-sm font-medium">Flashcards Created</CardTitle>
-                <Button className="rounded-full" size="icon" variant="ghost">
-                  <ChevronRightIcon className="h-4 w-4" />
-                  <span className="sr-only">View more</span>
-                </Button>
+        
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold">+110</div>
-                <p className="text-xs text-gray-500 dark:text-gray-400">+180.1% from last month</p>
+                <div className="text-2xl font-bold">0</div>
+                <p className="text-xs text-gray-500 dark:text-gray-400">0% from last month</p>
               </CardContent>
             </Card>
             <Card>
               <CardHeader className="flex flex-row items-center justify-between pb-2 space-y-0">
                 <CardTitle className="text-sm font-medium">Flashcards Studied</CardTitle>
-                <Button className="rounded-full" size="icon" variant="ghost">
-                  <ChevronRightIcon className="h-4 w-4" />
-                  <span className="sr-only">View more</span>
-                </Button>
+                
               </CardHeader>
               <CardContent>
-                <div className="text-2xl font-bold">+573</div>
-                <p className="text-xs text-gray-500 dark:text-gray-400">+201 since last hour</p>
+                <div className="text-2xl font-bold">0</div>
+                <p className="text-xs text-gray-500 dark:text-gray-400">0 since last hour</p>
               </CardContent>
             </Card>
           </div>
-          <Card>
-            <CardHeader className="flex flex-row items-center justify-between pb-2 space-y-0">
-              <CardTitle className="text-sm font-medium">Recent Activity</CardTitle>
-              <Button className="rounded-full" size="sm">
-                Clear
-              </Button>
-            </CardHeader>
-            <CardContent className="p-0">
-              <div className="divide-y">
-                <div className="flex items-center justify-between p-3">
-                  <div className="flex items-center gap-3">
-                    <ClockIcon className="h-4 w-4 text-gray-500 dark:text-gray-400" />
-                    <div className="font-medium">Studied: Spanish Verbs</div>
-                  </div>
-                  <div className="text-sm text-gray-500 dark:text-gray-400">2 hours ago</div>
-                </div>
-                <div className="flex items-center justify-between p-3">
-                  <div className="flex items-center gap-3">
-                    <FileEditIcon className="h-4 w-4 text-gray-500 dark:text-gray-400" />
-                    <div className="font-medium">Created: European Capitals Flashcards</div>
-                  </div>
-                  <div className="text-sm text-gray-500 dark:text-gray-400">1 day ago</div>
-                </div>
-                <div className="flex items-center justify-between p-3">
-                  <div className="flex items-center gap-3">
-                    <FileEditIcon className="h-4 w-4 text-gray-500 dark:text-gray-400" />
-                    <div className="font-medium">Created: European Capitals Flashcards</div>
-                  </div>
-                  <div className="text-sm text-gray-500 dark:text-gray-400">1 day ago</div>
-                </div>
-                <div className="flex items-center justify-between p-3">
-                  <div className="flex items-center gap-3">
-                    <ClockIcon className="h-4 w-4 text-gray-500 dark:text-gray-400" />
-                    <div className="font-medium">Studied: Spanish Verbs</div>
-                  </div>
-                  <div className="text-sm text-gray-500 dark:text-gray-400">2 hours ago</div>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
         </main>
       </div>
     </div>

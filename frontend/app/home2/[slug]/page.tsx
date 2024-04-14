@@ -1,8 +1,10 @@
 
+"use client"
+
 import React, { useState, useEffect } from 'react';
 import { Home } from '@/components/component/Home2';
 
-const Page = () => {
+const Page = ({ params }: { params: { slug: string } }) => {
     const [loading, setLoading] = useState(true);
 
     useEffect(() => {
@@ -22,7 +24,7 @@ const Page = () => {
                     <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-gray-900"></div>
                 </div>
             ) : (
-                <Home />
+                <Home test={params.slug} />
             )}
         </div>
     );
